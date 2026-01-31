@@ -2,150 +2,119 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>סאונד טק | הגברה ותאורה לאירועי פרימיום</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>סאונד טק - הגברה ותאורה</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
 font-family: 'Assistant', sans-serif;
 background-color: #050505;
 color: white;
 margin: 0;
+padding: 0;
 overflow-x: hidden;
 }
-
-.gold-gradient {
-background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+.gold-text {
+background: linear-gradient(to right, #D4AF37, #F2D472, #D4AF37);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-
 .hero-section {
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
-url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=2070');
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80');
 background-size: cover;
 background-position: center;
-background-attachment: fixed;
+min-height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
 }
-
-.glass-card {
-background: rgba(255, 255, 255, 0.02);
-backdrop-filter: blur(15px);
-border: 1px solid rgba(255, 255, 255, 0.08);
-transition: all 0.4s ease;
-}
-
-.glass-card:hover {
-border-color: rgba(249, 115, 22, 0.4);
-transform: translateY(-5px);
-}
-
-.glow-button {
-box-shadow: 0 0 25px rgba(234, 88, 12, 0.4);
-animation: pulse-glow 2s infinite;
-}
-
-@keyframes pulse-glow {
-0% { box-shadow: 0 0 15px rgba(234, 88, 12, 0.3); }
-50% { box-shadow: 0 0 35px rgba(234, 88, 12, 0.6); }
-100% { box-shadow: 0 0 15px rgba(234, 88, 12, 0.3); }
-}
-
-.section-divider {
-height: 1px;
-background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+.btn-shadow {
+box-shadow: 0 0 20px rgba(234, 88, 12, 0.5);
 }
 </style>
 </head>
 <body>
 
-<!-- Hero Section -->
-<section class="hero-section min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
-<div class="absolute top-10 flex items-center gap-3 bg-black/40 px-6 py-2 rounded-full border border-white/10 backdrop-blur-md">
-<span class="text-orange-600 font-bold uppercase tracking-widest text-xs">FBT MUSE • Official Gear</span>
+<!-- Header -->
+<nav class="w-full py-4 px-6 bg-black/90 border-b border-orange-600/30 sticky top-0 z-[100] flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="bg-orange-600 text-white font-bold px-2 py-1 rounded text-sm italic">ST</div>
+<span class="font-bold text-lg hidden md:block">סאונד טק</span>
 </div>
+<a href="tel:0523311961" class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm btn-shadow">
+052-3311961
+</a>
+</nav>
 
-<h1 class="text-6xl md:text-9xl font-black mb-8 leading-none tracking-tighter">
-סאונד חלומי <br>
-<span class="gold-gradient italic">בכל עוצמה</span>
-</h1>
-
-<p class="text-xl md:text-3xl text-gray-300 max-w-3xl mb-12 font-light tracking-wide italic">
-הסטנדרט האיטלקי של FBT Muse כבר כאן. <br> הגברה ותאורה לאירועים שלא שוכחים.
+<!-- Hero -->
+<header class="hero-section">
+<div class="max-w-2xl">
+<div class="mb-4 text-orange-500 font-bold tracking-widest text-sm uppercase">FBT MUSE • OFFICIAL GEAR</div>
+<h1 class="text-5xl md:text-7xl font-black mb-4">סאונד חלומי<br><span class="gold-text">בכל עוצמה</span></h1>
+<p class="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
+הסטנדרט האיטלקי של FBT Muse כבר כאן. הגברה ותאורה לאירועים שלא שוכחים.
 </p>
 
-<div class="flex flex-col md:flex-row gap-6">
-<a href="tel:0523311961" class="glow-button bg-orange-600 hover:bg-orange-700 text-white px-12 py-5 rounded-full font-black text-xl transition-all">
+<div class="flex flex-col gap-4 max-w-xs mx-auto">
+<a href="tel:0523311961" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-xl transition-all text-xl">
 חייגו עכשיו: 052-3311961
 </a>
-<a href="https://wa.me/972523311961" target="_blank" class="bg-white/5 hover:bg-white/10 text-white border border-white/20 px-12 py-5 rounded-full font-black text-xl transition-all flex items-center justify-center gap-3">
-<span>💬</span> WhatsApp
+<a href="https://wa.me/972523311961" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-4 px-8 rounded-xl transition-all flex items-center justify-center gap-2">
+<span>WhatsApp</span>
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 </div>
+</div>
+</header>
 
-<div class="absolute bottom-10 animate-bounce opacity-30 text-2xl">↓</div>
-</section>
-
-<!-- Gear Section -->
-<section class="py-32 px-6 bg-black relative overflow-hidden">
-<!-- Background Decor -->
-<div class="absolute top-0 right-0 w-96 h-96 bg-orange-600/5 rounded-full blur-[120px]"></div>
-
-<div class="max-w-6xl mx-auto">
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div class="relative group">
-<div class="absolute -inset-4 bg-orange-600/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
-<div class="glass-card p-12 rounded-[3rem] text-center relative">
-<span class="text-8xl mb-8 block">🔊</span>
-<h2 class="text-4xl font-black italic mb-4 uppercase gold-gradient">FBT MUSE Italy</h2>
-<p class="text-gray-400 text-lg leading-relaxed font-light">
-מערכת ה-Line Array המוערכת ביותר בעולם האירועים. דיוק קריסטלי, עוצמה חסרת תקדים וכיסוי מושלם לכל חלל.
-</p>
+<!-- Gallery Section (תיקון התמונה השבורה) -->
+<section class="py-16 px-6 bg-zinc-950">
+<h2 class="text-2xl font-bold mb-8 text-center">הציוד שלנו בפעולה</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+<div class="rounded-2xl overflow-hidden aspect-video bg-zinc-900">
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80"
+alt="תאורה באירוע"
+class="w-full h-full object-cover"
+onerror="this.src='https://via.placeholder.com/800x600?text=Event+Lighting'">
 </div>
-</div>
-
-<div class="space-y-8">
-<div class="glass-card p-8 rounded-3xl flex items-center gap-6">
-<span class="text-4xl">💡</span>
-<div>
-<h4 class="text-xl font-bold text-orange-500">תאורה ממוחשבת</h4>
-<p class="text-gray-400 text-sm">פנסי Beam ולייזרים RGB לסנכרון מושלם עם הקצב.</p>
-</div>
-</div>
-<div class="glass-card p-8 rounded-3xl flex items-center gap-6">
-<span class="text-4xl">🎤</span>
-<div>
-<h4 class="text-xl font-bold text-orange-500">אלחוטי SHURE</h4>
-<p class="text-gray-400 text-sm">המערכות האמינות בעולם לסאונד נקי ללא ניתוקים.</p>
-</div>
-</div>
-<div class="glass-card p-8 rounded-3xl flex items-center gap-6">
-<span class="text-4xl">🏆</span>
-<div>
-<h4 class="text-xl font-bold text-orange-500">אירועי פרימיום</h4>
-<p class="text-gray-400 text-sm">חתונות, אירועי חברה והפקות ענק ברמה הגבוהה ביותר.</p>
-</div>
-</div>
-</div>
+<!-- תמונה חלופית במקום התמונה השבורה -->
+<div class="rounded-2xl overflow-hidden aspect-video bg-zinc-900">
+<img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80"
+alt="מיקסר סאונד מקצועי"
+class="w-full h-full object-cover"
+onerror="this.src='https://via.placeholder.com/800x600?text=Sound+Console'">
 </div>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="py-20 px-6 border-t border-white/5 text-center bg-black/50">
-<div class="text-4xl font-black italic mb-4 tracking-tighter">SOUND <span class="text-orange-600 uppercase">TECH</span></div>
-<p class="text-gray-500 font-light mb-10 tracking-[0.3em] uppercase text-xs">Premium Sound & Lighting Solutions</p>
-
-<div class="flex justify-center gap-8 mb-12 font-bold">
-<a href="tel:0523311961" class="text-white hover:text-orange-500 transition-colors">052-3311961</a>
-<span class="text-gray-800">|</span>
-<a href="https://wa.me/972523311961" class="text-green-500 hover:text-green-400 transition-colors">WhatsApp</a>
+<footer class="py-20 px-6 bg-black text-center border-t border-white/5">
+<div class="flex items-center justify-center gap-2 mb-6">
+<span class="text-2xl font-black">סאונד <span class="text-orange-600">טק</span></span>
 </div>
 
-<div class="section-divider mb-8"></div>
-<p class="text-[10px] text-gray-700 uppercase tracking-widest">&copy; 2026 SOUND TECH OFFICIAL. ALL RIGHTS RESERVED.</p>
+<p class="text-gray-400 mb-8 max-w-sm mx-auto">
+הגברה ותאורה מקצועית לכל סוגי האירועים. שירות בפריסה ארצית.
+</p>
+
+<div class="space-y-4">
+<div class="text-gray-500 text-sm">איש קשר: איציק</div>
+<a href="tel:0523311961" class="block text-orange-600 text-3xl font-bold tracking-tighter">
+052-3311961
+</a>
+<div class="text-gray-600 text-xs mt-4">soundtechpro@gmail.com</div>
+</div>
 </footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/972523311961" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] p-4 rounded-full shadow-2xl z-[200] transform hover:scale-110 transition-transform">
+<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 </body>
 </html>
